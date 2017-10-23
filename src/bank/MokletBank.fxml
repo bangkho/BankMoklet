@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="panel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="475.0" prefWidth="400.0" style="-fx-max-width: 400; -fx-background-color: #fff; -fx-max-height: 475;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bank.MokletBankController">
+   <children>
+      <JFXPasswordField fx:id="fieldpin" layoutX="126.0" layoutY="119.0" maxWidth="149.0" minWidth="149.0" prefHeight="43.0" prefWidth="150.0" promptText="        PIN">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXPasswordField>
+      <Pane layoutY="3.0" prefHeight="74.0" prefWidth="400.0" style="-fx-background-color: #00ace6;" />
+      <Pane layoutY="-5.0" prefHeight="74.0" prefWidth="400.0" style="-fx-background-color: #00bfff;" />
+      <Label layoutX="56.0" layoutY="14.0" text="Welcome to Moklet Bank" textFill="WHITE">
+         <font>
+            <Font name="BebasNeueBold" size="35.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelPin" alignment="CENTER" contentDisplay="CENTER" layoutX="125.0" layoutY="82.0" text="Enter Your Pin Number">
+         <font>
+            <Font name="BebasNeueBold" size="20.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="29.0" layoutY="166.0" prefHeight="296.0" prefWidth="343.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <JFXButton fx:id="btn1" onAction="#in1" prefHeight="75.0" prefWidth="121.0" ripplerFill="#00bbff" text="1">
+               <font>
+                  <Font name="BebasNeueBold" size="35.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btn2" onAction="#in2" prefHeight="75.0" prefWidth="117.0" ripplerFill="#00bbff" text="2" GridPane.columnIndex="1">
+               <font>
+                  <Font name="BebasNeueBold" size="35.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btn4" onAction="#in4" prefHeight="75.0" prefWidth="124.0" ripplerFill="#00bbff" text="4" GridPane.rowIndex="1">
+               <font>
+                  <Font name="BebasNeueBold" size="35.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btn3" onAction="#in3" prefHeight="75.0" prefWidth="124.0" ripplerFill="#00bbff" text="3" GridPane.columnIndex="2">
+               <font>
+                  <Font name="BebasNeueBold" size="35.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btn5" onAction="#in5" prefHeight="75.0" prefWidth="121.0" ripplerFill="#00bbff" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="BebasNeueBold" size="35.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btn6" onAction="#in6" prefHeight="75.0" prefWidth="119.0" ripplerFill="#00bbff" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="BebasNeueBold" size="35.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btn7" onAction="#in7" prefHeight="74.0" prefWidth="122.0" ripplerFill="#00bbff" text="7" GridPane.rowIndex="2">
+               <font>
+                  <Font name="BebasNeueBold" size="35.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btn8" onAction="#in8" prefHeight="74.0" prefWidth="117.0" ripplerFill="#00bbff" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="BebasNeueBold" size="35.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btn9" onAction="#in9" prefHeight="74.0" prefWidth="128.0" ripplerFill="#00bbff" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="BebasNeueBold" size="35.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnc" onAction="#cpin" prefHeight="74.0" prefWidth="124.0" ripplerFill="#00bbff" text="C" GridPane.rowIndex="3">
+               <font>
+                  <Font name="BebasNeueBold" size="35.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnok" onAction="#okpin" prefHeight="74.0" prefWidth="121.0" ripplerFill="#00bbff" text="OK" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font name="BebasNeueBold" size="35.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btn0" onAction="#in0" prefHeight="74.0" prefWidth="124.0" ripplerFill="#00bbff" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="BebasNeueBold" size="35.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </GridPane>
+      <StackPane fx:id="stack" disable="true" prefHeight="475.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+   </children>
+</AnchorPane>
